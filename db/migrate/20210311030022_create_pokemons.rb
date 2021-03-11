@@ -3,8 +3,8 @@ class CreatePokemons < ActiveRecord::Migration[6.1]
     create_table :pokemons do |t|
       t.integer :number
       t.string :pokemon
-      t.references :type1
-      t.references :type2
+      t.string :type1
+      t.string :type2
       t.integer :hp
       t.integer :attack
       t.integer :defense

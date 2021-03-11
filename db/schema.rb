@@ -15,8 +15,8 @@ ActiveRecord::Schema.define(version: 2021_03_11_030022) do
   create_table "pokemons", force: :cascade do |t|
     t.integer "number"
     t.string "pokemon"
-    t.integer "type1_id", null: false
-    t.integer "type2_id", null: false
+    t.string "type1"
+    t.string "type2"
     t.integer "hp"
     t.integer "attack"
     t.integer "defense"
@@ -27,8 +27,6 @@ ActiveRecord::Schema.define(version: 2021_03_11_030022) do
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["type1_id"], name: "index_pokemons_on_type1_id"
-    t.index ["type2_id"], name: "index_pokemons_on_type2_id"
   end
 
   create_table "types", force: :cascade do |t|
@@ -37,6 +35,4 @@ ActiveRecord::Schema.define(version: 2021_03_11_030022) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "pokemons", "type1s"
-  add_foreign_key "pokemons", "type2s"
 end
