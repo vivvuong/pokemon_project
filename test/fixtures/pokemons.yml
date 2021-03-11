@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: 1
+  pokemon: MyString
+  type1: one
+  type2: one
+  hp: 1
+  attack: 1
+  defense: 1
+  speed: 1
+  special: 1
+  gif: MyString
+  png: MyString
+  description: MyText
+
+two:
+  number: 1
+  pokemon: MyString
+  type1: two
+  type2: two
+  hp: 1
+  attack: 1
+  defense: 1
+  speed: 1
+  special: 1
+  gif: MyString
+  png: MyString
+  description: MyText
